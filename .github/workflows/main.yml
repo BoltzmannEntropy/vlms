@@ -19,9 +19,9 @@ jobs:
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
       
-      - name: Pull from the Hugging Face hub
+      - name: Pull from the Hugging Face hub with merge
         run: |
-          git pull --ff-only https://BoltzmannEntropy:$HF_TOKEN@huggingface.co/spaces/BoltzmannEntropy/vlms main
+          git pull --no-rebase https://BoltzmannEntropy:$HF_TOKEN@huggingface.co/spaces/BoltzmannEntropy/vlms main
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
       
