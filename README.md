@@ -10,7 +10,7 @@ license: mit
 
 # VLM-Image-Analysis: A Vision-and-Language Modeling Framework
 
-Welcome to the Hugging Face Space for VLM-Image-Analysis. This space showcases a cutting-edge framework that combines multiple Vision-Language Models (VLMs) and a Large Language Model (LLM) to provide comprehensive image analysis and captioning.
+Welcome to the Hugging Face Space (https://huggingface.co/spaces/BoltzmannEntropy/vlms) for VLM-Image-Analysis. This space showcases a cutting-edge framework that combines multiple Vision-Language Models (VLMs) and a Large Language Model (LLM) to provide comprehensive image analysis and captioning.
 
 <h1 align="center">    
   <img src="static/image.jpg" width="50%"></a>
