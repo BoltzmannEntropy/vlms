@@ -309,8 +309,9 @@ def create_gradio_interface():
                     - Compatible with png, jpg, jpeg, and webp formats                                        
                     - Compatibility with various AI models: Qwen2-VL-7B-Instruct, Qwen2-VL-2B-Instruct-GPTQ-Int4, InternVL2-1B, Qwen2-VL-72B, /Phi-3-vision-128k-instruct and moondream2""")
 
-        gr.Image(value="static/image.jpg", label="HF Image", width=300, height=300)  # Set custom width and height
-
+        image_path = os.path.abspath("static/image.jpg")
+        gr.Image(value=image_path, label="HF Image", width=300, height=300)
+        
         with gr.Tab("VLM model and Dataset selection"):
             gr.Markdown("### Dataset Selection: HF or from a ZIP file.")
             with gr.Accordion("Advanced Settings", open=True):
