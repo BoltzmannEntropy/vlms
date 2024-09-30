@@ -21,7 +21,7 @@ jobs:
       
       - name: Pull from the Hugging Face hub
         run: |
-          git pull https://BoltzmannEntropy:$HF_TOKEN@huggingface.co/spaces/BoltzmannEntropy/vlms main
+          git pull --ff-only https://BoltzmannEntropy:$HF_TOKEN@huggingface.co/spaces/BoltzmannEntropy/vlms main
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
       
