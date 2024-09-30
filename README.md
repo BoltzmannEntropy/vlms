@@ -57,14 +57,7 @@ Our methodology leverages state-of-the-art models and techniques, including:
 - Microsoft's Phi-3-vision model, known for its efficiency and performance in visual understanding tasks.
 - The Moondream2 model, which brings unique perspectives to image understanding, potentially capturing aspects overlooked by other models.
 
-The implementation utilises advanced libraries such as PyTorch and Hugging Face's Transformers, ensuring efficient processing and easy integration with existing deep learning workflows. We have also incorporated features to handle both individual images and batch processing from datasets or ZIP files, making our approach versatile for various research and practical applications.
-
-By combining multiple VLMs and using an LLM as a judge, we aim to mitigate individual model biases, capture a broader range of image details, and produce captions that are more informative and contextually appropriate. This approach not only improves the quality of image captioning but also opens up new avenues for exploring the synergies between different AI models in multimodal tasks.
-
-It is important to note, however, that while our method shows promise, it is not without limitations. The effectiveness of the approach may vary depending on the specific combination of models used and the nature of the images being captioned. Additionally, the computational resources required for this ensemble approach are significantly higher than those needed for single-model methods, which may limit its applicability in resource-constrained environments.
-
-In the following sections, we shall detail our methodology, present the experimental setup, and discuss the results and implications of our findings. We believe this work contributes significantly to the field of image captioning and demonstrates the potential of ensemble approaches in vision-language tasks.
-
+The implementation utilises libraries such as PyTorch and Hugging Face's Transformers, ensuring efficient processing and easy integration with existing deep learning workflows. We have also incorporated features to handle both individual images and batch processing from HF datasets or ZIP files, making our approach versatile for various research and practical applications.
 
 
 ## Table of Contents
