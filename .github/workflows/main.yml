@@ -1,9 +1,9 @@
-name: Sync to Hugging Face hub
+name: Sync to Hugging Face Hub
+
 on:
   push:
     branches: [main]
-  # to run this workflow manually from the Actions tab
-  workflow_dispatch:
+  workflow_dispatch:  # To trigger the workflow manually from the Actions tab
 
 jobs:
   sync-to-hub:
@@ -13,7 +13,20 @@ jobs:
         with:
           fetch-depth: 0
           lfs: true
-      - name: Push to hub
+
+      - name: Set up git configuration
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+      
+      - name: Pull from the Hugging Face hub
+        run: |
+          git pull https://BoltzmannEntropy:$HF_TOKEN@huggingface.co/spaces/BoltzmannEntropy/vlms main
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
-        run: git pull && git pull push https://BoltzmannEntropy:$HF_TOKEN@huggingface.co/spaces/BoltzmannEntropy/vlms main
+      
+      - name: Push changes to the Hugging Face hub
+        run: |
+          git push https://BoltzmannEntropy:$HF_TOKEN@huggingface.co/spaces/BoltzmannEntropy/vlms main
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
