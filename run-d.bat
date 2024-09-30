@@ -1,0 +1,1 @@
+docker run --gpus all --rm -it --shm-size=8gb --memory="16g" --env="DISPLAY" -p 8077:7842 -p 7860:7860  -p 8501:8501 -v %cd%:/home/user/app -v %cd%:/home/user/sharedfolder -v %cd%/.cache:/home/user/.cache  hf-docker:latest bash
