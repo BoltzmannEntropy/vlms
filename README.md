@@ -15,7 +15,7 @@ Welcome to the Hugging Face Space (https://huggingface.co/spaces/BoltzmannEntrop
 
 <h1 align="center">    
   <img src="static/image.jpg" width="50%"></a>
-  <h6> (Source wang2023allseeing: https://huggingface.co/datasets/OpenGVLab/CRPE?row=1) <h6>  
+  <h6> (Source: wang2023allseeing: https://huggingface.co/datasets/OpenGVLab/CRPE?row=1) <h6>  
 </h1>
 
 This repository contains the core code for a multi-model framework that enhances image interpretation through the combined power of several Vision-and-Language Modeling (VLM) systems. VLM-Image-Analysis delivers detailed, multi-faceted analyses of images by leveraging N cutting-edge VLM models, pre-trained on a wide range of datasets to detect diverse visual cues and linguistic patterns.
