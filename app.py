@@ -307,6 +307,7 @@ def create_gradio_interface():
         # Title
         gr.Markdown("# VLM-Image-Analysis: A Vision-and-Language Modeling Framework.")
         gr.Markdown("""
+                    - Requires at list 16 GB of VRAM (GPU memory)
                     - Handle a batch of images from a ZIP file OR
                     - Processes images from an HF DB 
                     - Compatible with png, jpg, jpeg, and webp formats                                        
