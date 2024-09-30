@@ -328,14 +328,14 @@ def create_gradio_interface():
         # init_image.change(show_image, inputs=init_image, outputs=init_image)
 
         with gr.Tab("VLM model and Dataset selection"):
-            gr.Markdown("### Dataset Selection: HF or from a ZIP file.")
+            gr.Markdown("### Dataset Selection: HF or load from a ZIP file.")
             with gr.Accordion("Advanced Settings", open=True):
                 with gr.Row():
                     # with gr.Column():  
-                    use_zip_input = gr.Checkbox(label="Use ZIP File", value=False)
+                    use_zip_input = gr.Checkbox(label="Use ZIP File", value=False)                    
+                    zip_file_input = gr.File(label="Upload ZIP File of Images", file_types=[".zip"])
                     dataset_input = gr.Dropdown(choices=dataset_options, label="Select Dataset", value=dataset_options[1], visible=True)
                     num_images_input = gr.Radio(choices=[1, 5, 20], label="Number of Images", value=5)
-                    zip_file_input = gr.File(label="Upload ZIP File of Images", file_types=[".zip"])
             gr.Markdown("### VLM Model Selection")
             with gr.Row():
                 with gr.Column():  
