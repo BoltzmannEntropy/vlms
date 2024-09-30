@@ -315,17 +315,17 @@ def create_gradio_interface():
         # image_path = os.path.abspath("static/image.jpg")
         # gr.Image(value=image_path, label="HF Image", width=300, height=300)
         
-        init_image = gr.Image(label="Selected Image", type="filepath")
+        # init_image = gr.Image(label="Selected Image", type="filepath")
 
-        # Use gr.Examples to showcase a set of example images
-        gr.Examples(
-            examples=[
-                ["static/image.jpg"],                
-            ],
-            inputs=[init_image],
-            label="Example Images"
-        )
-        init_image.change(show_image, inputs=init_image, outputs=init_image)
+        # # Use gr.Examples to showcase a set of example images
+        # gr.Examples(
+        #     examples=[
+        #         ["static/image.jpg"],                
+        #     ],
+        #     inputs=[init_image],
+        #     label="Example Images"
+        # )
+        # init_image.change(show_image, inputs=init_image, outputs=init_image)
 
         with gr.Tab("VLM model and Dataset selection"):
             gr.Markdown("### Dataset Selection: HF or from a ZIP file.")
